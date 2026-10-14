@@ -233,7 +233,6 @@ def _reference_definition_block(term: str, definition: str) -> html.Div:
 def reference_modal_children() -> list:
     glossary = html.Div(
         [
-            html.Div("Glossary", className="panel-label"),
             html.H3("Simulator terms", className="panel-title-small"),
             html.Div(
                 [
@@ -247,7 +246,6 @@ def reference_modal_children() -> list:
     )
     csd_mapping = html.Div(
         [
-            html.Div("CSD mapping", className="panel-label"),
             html.H3("General context", className="panel-title-small"),
             html.Div(
                 (

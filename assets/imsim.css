@@ -8,6 +8,7 @@
   --imsim-surface-strong: #fcfdf9;
   --imsim-ink: #15231f;
   --imsim-muted: #5b6964;
+  --imsim-high-contrast: #000000;
   --imsim-line: rgba(21, 35, 31, 0.13);
   --imsim-teal: #167264;
   --imsim-orange: #b9621e;
@@ -108,6 +109,7 @@ body {
   --imsim-surface-strong: rgba(18, 31, 49, 0.94);
   --imsim-ink: #e6eefc;
   --imsim-muted: #9aabc6;
+  --imsim-high-contrast: #ffffff;
   --imsim-line: rgba(214, 228, 255, 0.14);
   --imsim-shadow: 0 1rem 2.5rem rgba(2, 8, 18, 0.38);
   --imsim-shadow-float: 0 1rem 2rem rgba(2, 8, 18, 0.34);
@@ -264,7 +266,7 @@ body {
 .academy-card-formula,
 .helper-copy,
 .lesson-formula-chip {
-  color: var(--imsim-muted);
+  color: var(--imsim-high-contrast);
   font-size: 0.85rem;
 }
 
@@ -583,8 +585,8 @@ body {
 }
 
 .lesson-snapshot-label {
-  color: var(--imsim-muted);
-  font-size: 0.72rem;
+  color: var(--imsim-high-contrast);
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -753,6 +755,7 @@ body {
   font-weight: 700;
   line-height: 1.18;
   margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 .status-value {
