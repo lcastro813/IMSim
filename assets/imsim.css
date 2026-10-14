@@ -318,12 +318,12 @@ body {
 }
 
 .academy-status-badge {
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   line-height: 1;
   max-width: 7rem;
   min-width: 5.6rem;
   overflow: hidden;
-  padding: 0.35rem 0.55rem;
+  padding: 0.55rem 0.55rem;
   position: absolute;
   right: 0;
   text-align: center;
