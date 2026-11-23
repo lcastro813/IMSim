@@ -423,7 +423,16 @@ def lesson_objective_children(state: SimulationState) -> list:
     children.extend(
         [
             html.Div(headline, className="lesson-objective-headline"),
-            html.Ul([html.Li(row) for row in rows], className="lesson-copy-list"),
+            html.Div(
+                [
+                    html.Span(
+                        row,
+                        className="lesson-compact-pill lesson-compact-pill-strong",
+                    )
+                    for row in rows
+                ],
+                className="lesson-copy-list lesson-compact-inline",
+            ),
         ]
     )
     return children
@@ -460,12 +469,12 @@ def lesson_compact_summary_children(state: SimulationState) -> list:
         html.Div(
             [
                 html.Span(headline, className="lesson-compact-pill lesson-compact-pill-strong"),
-                *[html.Span(row, className="lesson-compact-pill") for row in objective_rows],
+                *[html.Span(row, className="lesson-compact-pill lesson-compact-pill-strong") for row in objective_rows],
             ],
             className="lesson-compact-inline"
             + (" goals-met" if evaluation and evaluation.passed else ""),
         ),
-    ]
+    ] 
 
 
 def academy_level_card_children(level_index: int, state: SimulationState) -> list:
