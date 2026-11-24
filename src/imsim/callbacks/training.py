@@ -586,7 +586,7 @@ def register_training_callbacks(ctx: CallbackRegistrarContext) -> None:
             po_label,
             graph_title,
             service_panel_title,
-            "Planner grid"
+            "Inventory"
             if is_simulator or (level is not None and (level.index == 2 or level.index >= 6))
             else "Lesson items",
             ctx.panel_style("actions" in panels),

@@ -243,7 +243,7 @@ def _session_panel() -> html.Div:
                         [
                             html.Div(
                                 "Simulation speed",
-                                className="control-label session-speed-label",
+                                className="panel-title",
                             ),
                             html.Div(
                                 "1 tick/sec",
@@ -331,7 +331,6 @@ def _detail_col(
     return dbc.Col(
         shell_card(
             [
-                html.Div(label, className="panel-label"),
                 html.H3(title, className="panel-title", **optional_id(title_id)),
                 html.Div(id=body_id),
             ],

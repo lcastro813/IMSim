@@ -15,7 +15,7 @@ def _lesson_snapshot_table(
 ) -> html.Div:
     return html.Div(
         [
-            html.Div(label, className="lesson-snapshot-label"),
+            html.Div(label, className="panel-title"),
             html.Table(
                 [
                     html.Thead(html.Tr([html.Th(header) for header in headers])),

@@ -465,7 +465,7 @@ def lesson_compact_summary_children(state: SimulationState) -> list:
         for row in list(evaluation.metric_rows if evaluation is not None else ())
     ]
     return [
-        html.Strong("Objectives"),
+        html.Div("Objectives", className="panel-title"),
         html.Div(
             [
                 html.Span(headline, className="lesson-compact-pill lesson-compact-pill-strong"),
