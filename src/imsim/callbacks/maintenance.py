@@ -44,7 +44,7 @@ def register_maintenance_callbacks(ctx: CallbackRegistrarContext) -> None:
     )
     def apply_theme(theme):
         current_theme = "dark" if theme == "dark" else "light"
-        next_label = "Light mode" if current_theme == "dark" else "Dark mode"
+        next_label = "Light Mode" if current_theme == "dark" else "Dark Mode"
         toggle_class = ctx.button_class("ghost", "theme-toggle-button button-sm")
         grid_class = _grid_theme_class(current_theme)
         return (

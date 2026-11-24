@@ -142,7 +142,7 @@ def _command_rail_panel() -> html.Div:
                         "po-overview-wrap",
                     ),
                     _wrapped_action(
-                        "Add / import items",
+                        "Add / Import Items",
                         "add-item-button",
                         "light",
                         "add-item-wrap",
@@ -196,7 +196,7 @@ def _policy_panel() -> html.Div:
         [
             html.Details(
                 [
-                    html.Summary("Global parameters"),
+                    html.Summary("Global Parameters"),
                     *_controls(_POLICY_CONTROLS),
                     _auto_po_controls(),
                     html.Div(id="update-params-conf", className="mt-3"),
@@ -279,7 +279,7 @@ def _graph_panel() -> html.Div:
         [
             html.Div("Signal map", className="panel-label"),
             html.H3(
-                "Inventory signal map",
+                "Inventory Signal Map",
                 className="panel-title",
                 id="graph-panel-title",
             ),
@@ -457,7 +457,7 @@ def dashboard_shell() -> html.Div:
                                     _detail_col(
                                         panel_id="exceptions-panel",
                                         label="Exceptions",
-                                        title="Exception center",
+                                        title="Exception Center",
                                         body_id="exception-center-shell",
                                         lg=5,
                                     ),

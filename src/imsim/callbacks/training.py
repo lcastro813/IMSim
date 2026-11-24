@@ -521,15 +521,15 @@ def register_training_callbacks(ctx: CallbackRegistrarContext) -> None:
             else "Place Guided Reorder"
         )
         graph_title = (
-            "On-hand lesson trend"
+            "On-Hand Lesson Trend"
             if level is not None and level.index == 1
             else (
-                "Fill-rate service view"
+                "Fill-Rate Service View"
                 if level is not None and level.index == 3
-                else ("Inventory signal map")
+                else ("Inventory Signal Map")
             )
         )
-        service_panel_title = "Lesson snapshot" if level is not None else "Service"
+        service_panel_title = "Lesson Snapshot" if level is not None else "Service"
         start_label, start_class = ctx.start_button_state(
             state,
             running=state.is_initialized,

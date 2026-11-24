@@ -96,7 +96,7 @@ def academy_menu_shell(initial_state: SimulationState) -> html.Div:
                                 class_name="button-pill",
                             ),
                             action_button(
-                                "Dark mode",
+                                "Dark Mode",
                                 "academy-theme-toggle",
                                 "ghost",
                                 class_name="theme-toggle-button button-sm",
